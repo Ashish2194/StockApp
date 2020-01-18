@@ -1,0 +1,176 @@
+.container {
+    display: flex;
+    padding: 50px;
+}
+.column-30 {
+    width: 30%;
+    background-color: white;
+    color: black;
+    border: 1px solid #b7aeae;
+    padding: 10px 15px;
+}
+.column-70 {
+    width: 65%;
+    color: #000;
+    background-color: white;
+    border: 1px solid #b7aeae;
+    padding: 10px 15px;
+}
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  tr {
+    cursor: pointer;
+  }
+
+  th {
+      background-color: #bb86fc;
+      color: white;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
+
+  td.updated_at{
+    font-size: 12px;
+  }
+
+  .value {
+    padding: 5px;
+  }
+
+  .button {
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+  }
+  
+  .button1 {
+    background-color: #23d160;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .button2 {
+    background-color: #e47070;
+    font-size: 13px;
+    padding: 5px;
+    margin-left: 95px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button3 {
+    transform: translateY(-10px);
+    background-color: #e47070;
+    font-size: 13px;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .highlighter {
+   display: flex;
+   background-color: #363636;
+  }
+
+  .graph-header {
+    display: flex;
+    background-color: #363636;
+    padding: 15px 10px;
+    color: white;
+    font-size: 20px;
+  }
+  .dot{
+      background-color: red;
+      width: 10px;
+      height:10px;
+      border-radius: 10px;
+      animation: beat .25s infinite alternate;
+	  transform-origin: center;
+  }
+  .live-text {
+      margin-left: 10px;
+  }
+
+  @keyframes beat {
+	to { transform: scale(1.4); }
+  }
+
+  .icon.market-trend {
+    background: #e2e2e2;
+    border-radius: 5px;
+    margin-left: 3px;
+    padding: 2px;
+  }
+  
+  .up-arrow {
+    color: green;
+  }
+  
+  .down-arrow {
+    color: red;
+  }
+
+  .red{
+    color: red;
+  }
+  
+  .green{
+    color: green;
+  }
+
+  .selected{
+    background: #4dabf559;
+    box-shadow: 1px 1px 5px #5555557d inset;
+  }
+
+  .graph-subtitle {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+  }
+
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

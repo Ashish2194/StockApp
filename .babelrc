@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  // We only use newer syntaxes and features which are in stage 3 and above
+  "plugins": [
+    // Allows defining class properties direclty in the body of the class
+    // Currently in stage 3
+    // Proposal links:
+    // https://github.com/tc39/proposal-class-fields
+    // https://github.com/tc39/proposal-static-class-features
+    "@babel/plugin-proposal-class-properties"
+  ]
+}
